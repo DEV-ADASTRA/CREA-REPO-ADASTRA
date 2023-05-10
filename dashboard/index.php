@@ -33,7 +33,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                         <table id="tablaPersonas" class="table table-striped table-bordered table-condensed" style="width:100%">
                         <thead class="text-center">
                             <tr>
-                                <th>Id</th>
+                                <th>id</th>
                                 <th>Nombre</th>
                                 <th>País</th>                                
                                 <th>Edad</th>  

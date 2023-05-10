@@ -4,15 +4,19 @@ $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 // Recepción de los datos enviados mediante POST desde el JS   
 
-$nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
+$id = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
 $pais = (isset($_POST['pais'])) ? $_POST['pais'] : '';
 $edad = (isset($_POST['edad'])) ? $_POST['edad'] : '';
+$opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
+$id = (isset($_POST['id'])) ? $_POST['id'] : '';
+$opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
+$id = (isset($_POST['id'])) ? $_POST['id'] : '';
 $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
 switch($opcion){
     case 1: //alta
-        $consulta = "INSERT INTO personas (nombre, pais, edad) VALUES('$nombre', '$pais', '$edad') ";			
+        $consulta = "INSERT INTO CLIENTES (nombre, pais, edad) VALUES('$nombre', '$pais', '$edad') ";			
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
 

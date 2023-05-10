@@ -5,7 +5,7 @@
          $database = "ADastra";
          $username = "ADMIN-ADASTRA";
          $password = "Grande123$";
-         
+         //implementacion del PDO  con la encroptacion md5 .  
          $opciones = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
          
          try{
