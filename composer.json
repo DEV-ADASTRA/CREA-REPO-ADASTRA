@@ -1,0 +1,30 @@
+{
+    "name":"adastra/dev-adastra",
+    "description": "creacion de pagina adastra proyecto",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+
+        {
+
+            "name": "DEVELOPER",
+            "email": "dev@adastra-commercial.mx"
+        },{
+
+            "name": "ADMI",
+            "email": "usuaruio12@adastra-commercial.mx"
+        }
+    ],
+    
+    "require": 
+    {
+        "monolog/monolog": "2.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+
+        "adastra\\":"src/"
+        }
+    }
+
+}
